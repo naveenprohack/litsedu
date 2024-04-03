@@ -15,7 +15,13 @@
     // Initiate the wowjs
     new WOW().init();
     
-    
+    //menu
+     $(document).ready(function(){
+    // Close navbar toggle when a link is clicked
+    $('.nav-link').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+    });
+  });
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
